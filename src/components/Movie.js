@@ -7,8 +7,8 @@ const Movie = (props) => {
             <div className="card-image waves-effect waves-block waves-light">
                 {
                     poster === 'N/A'
-                        ? <img className="activator" src={`https://via.placeholder.com/300x400?text=${title}`}/>
-                        : <img className="activator" src={poster} align='movie poster'/>
+                        ? <img className="activator" src={`https://via.placeholder.com/300x400?text=${title}`} alt='poster'/>
+                        : <img className="activator" src={poster} align='movie poster' alt='poster'/>
                 }
             </div>
             <div className="card-content">
