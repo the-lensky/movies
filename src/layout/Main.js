@@ -43,7 +43,7 @@ const Main = () => {
 
     return (
         <main className='container content'>
-            <h1>test3</h1>
+            <h1>test5</h1>
             <Search searchMovies={searchMovies}/>
             {
                 loading ? <Preloader/> : <Movies movies={movies}/>
