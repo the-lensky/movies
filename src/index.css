@@ -7,11 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 nav{
   padding: 0 1rem;
 }
@@ -25,13 +20,6 @@ nav{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
-}
-
-.preloader {
-  position: absolute;
-  width: 70%;
-  top: 50%;
-  margin: 0 auto;
 }
 
 .btn-search{

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const Search = ({searchMovies}) => {
 
-    const [search, setSearch] = useState('Mortal Kombat')
+    const [search, setSearch] = useState('')
     const [filter, setFilter] = useState('all')
 
     const handleKey = (e) => {
@@ -13,13 +13,8 @@ const Search = ({searchMovies}) => {
 
     const handleFilter = (e) => {
         setFilter(e.target.dataset.type)
-        console.log(filter)
-
+        searchMovies(search, e.target.dataset.type)
     }
-
-    useEffect(() => {
-        searchMovies(search, filter)
-    }, [filter])
 
     return (
         <div className="row ">
