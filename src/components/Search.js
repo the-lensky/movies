@@ -1,21 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Search = ({searchMovies}) => {
 
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState('Mortal Kombat')
     const [filter, setFilter] = useState('all')
 
     const handleKey = (e) => {
         if (e.key === 'Enter') {
-            searchMovies(search,filter)
+            searchMovies(search, filter)
         }
     }
 
     const handleFilter = (e) => {
         setFilter(e.target.dataset.type)
         console.log(filter)
-        searchMovies(search,filter)
+
     }
+
+    useEffect(() => {
+        searchMovies(search, filter)
+    }, [filter])
 
     return (
         <div className="row ">
@@ -31,7 +35,7 @@ const Search = ({searchMovies}) => {
                     />
                     <button
                         className="btn btn-search purple lighten-1"
-                        onClick={() => searchMovies(search,filter)}
+                        onClick={() => searchMovies(search, filter)}
                     >
                         Search
                     </button>

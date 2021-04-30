@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Headder = () => {
+const Header = () => {
     return (
         <nav className='purple'>
             <div className="nav-wrapper">
@@ -14,4 +14,4 @@ const Headder = () => {
     )
 }
 
-export default Headder
+export default Header
