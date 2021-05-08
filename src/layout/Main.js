@@ -13,7 +13,7 @@ const Main = () => {
     const searchMovies = (str, filter = 'all') => {
         setLoading(true)
         setMovies([])
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${filter !== 'all' ? `&type=${filter}` : ''}&plot=full&i`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${filter !== 'all' ? `&type=${filter}` : ''}&plot=full&i`)
             .then(response => response.json())
             .then((data) => {
                 setMovies(data.Search)
