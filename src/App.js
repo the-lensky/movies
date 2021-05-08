@@ -6,8 +6,8 @@ function App(props) {
     return (
         <>
             <Header/>
-            <Main />
-            <Footer />
+            <Main/>
+            <Footer/>
         </>
     )
 }
