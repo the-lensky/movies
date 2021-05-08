@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/https//the-lensky.github.io/movies/static/css/main.fc20e731.chunk.css",
+    "main.js": "/https//the-lensky.github.io/movies/static/js/main.b0548e76.chunk.js",
+    "main.js.map": "/https//the-lensky.github.io/movies/static/js/main.b0548e76.chunk.js.map",
+    "runtime-main.js": "/https//the-lensky.github.io/movies/static/js/runtime-main.211f0c00.js",
+    "runtime-main.js.map": "/https//the-lensky.github.io/movies/static/js/runtime-main.211f0c00.js.map",
+    "static/js/2.b2fe63a7.chunk.js": "/https//the-lensky.github.io/movies/static/js/2.b2fe63a7.chunk.js",
+    "static/js/2.b2fe63a7.chunk.js.map": "/https//the-lensky.github.io/movies/static/js/2.b2fe63a7.chunk.js.map",
+    "index.html": "/https//the-lensky.github.io/movies/index.html",
+    "static/css/main.fc20e731.chunk.css.map": "/https//the-lensky.github.io/movies/static/css/main.fc20e731.chunk.css.map",
+    "static/js/2.b2fe63a7.chunk.js.LICENSE.txt": "/https//the-lensky.github.io/movies/static/js/2.b2fe63a7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.211f0c00.js",
+    "static/js/2.b2fe63a7.chunk.js",
+    "static/css/main.fc20e731.chunk.css",
+    "static/js/main.b0548e76.chunk.js"
+  ]
+}
