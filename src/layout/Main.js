@@ -10,6 +10,20 @@ const Main = () => {
     const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(true)
 
+    useEffect(() => {
+        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=mortal-kombat`)
+            .then(response => response.json())
+            .then((data) => {
+                setMovies(data.Search)
+                setLoading(false)
+            })
+            .catch((err) => {
+                    console.log(err)
+                    setLoading(false)
+                }
+            )
+    }, [])
+
     const searchMovies = (str, filter = 'all') => {
         setLoading(true)
         setMovies([])
@@ -25,20 +39,6 @@ const Main = () => {
                 }
             )
     }
-
-    useEffect(() => {
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=mortal-kombat`)
-            .then(response => response.json())
-            .then((data) => {
-                setMovies(data.Search)
-                setLoading(false)
-            })
-            .catch((err) => {
-                    console.log(err)
-                    setLoading(false)
-                }
-            )
-    }, [])
 
     return (
         <main className='container content'>
