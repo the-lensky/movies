@@ -34,6 +34,7 @@ const Search = ({searchMovies}) => {
                     >
                         Search
                     </button>
+
                 </div>
                 <div>
                     <label>

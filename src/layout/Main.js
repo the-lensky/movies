@@ -25,7 +25,6 @@ const Main = () => {
                 }
             )
     }
-    console.log(movies)
 
     useEffect(() => {
         fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=mortal-kombat`)
@@ -43,7 +42,6 @@ const Main = () => {
 
     return (
         <main className='container content'>
-            <h1>test6</h1>
             <Search searchMovies={searchMovies}/>
             {
                 loading ? <Preloader/> : <Movies movies={movies}/>
