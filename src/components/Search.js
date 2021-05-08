@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Search = ({searchMovies}) => {
 
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState('mortal-kombat')
     const [filter, setFilter] = useState('all')
 
     const handleKey = (e) => {
